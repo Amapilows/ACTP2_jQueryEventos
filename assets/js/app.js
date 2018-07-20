@@ -15,5 +15,13 @@ $(function(){
 		e.preventDefault();
 		e.stopPropagation();
 	});
+
+	$("#image").on("change", function(e){
+	$(".create__image img").attr("src", "assets/images/squared/" + $(this).val());
+	});
+
+	$("#author").on("change", function(){
+	$(".create__profile img").attr("src", "assets/images/profiles/" + $(this).val());
+	});
 	
 });
