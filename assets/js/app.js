@@ -10,5 +10,10 @@ $(function(){
 		e.stopPropagation();
 	});
 
-		
+	$('.card__follow-btn').click('click', function(e){
+		$(this).toggleClass('card__follow-btn--following');
+		e.preventDefault();
+		e.stopPropagation();
+	});
+	
 });
